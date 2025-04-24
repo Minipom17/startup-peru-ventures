@@ -1,4 +1,3 @@
-
 import type { Config } from "tailwindcss";
 
 export default {
@@ -53,26 +52,35 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
-				// Updated brand colors with more vibrant options
-				terracotta: '#FF5733', // Brighter orange-red
-				teal: '#00BCD4', // Brighter teal blue
-				gold: '#FFD700', // Brighter gold
-				cream: '#FFFAF0', // Keeping cream light
-				charcoal: '#2D2A26', // Keeping charcoal
-				alpaca: {
-					100: '#FFFAF0', // Light cream
-					200: '#E6D7BF', // Warm sand
-					300: '#FF5733', // Vibrant terracotta
-					400: '#00BCD4', // Vibrant teal
-					500: '#FFD700', // Vibrant gold
-					600: '#2D2A26', // Charcoal
+				ocean: {
+					100: '#E3F2FD', // Light blue
+					200: '#90CAF9', // Sky blue
+					300: '#1EAEDB', // Bright blue
+					400: '#0EA5E9', // Ocean blue
+					500: '#0288D1', // Deep blue
+					600: '#01579B', // Dark blue
 				},
-				// New sporty color additions
+				forest: {
+					100: '#F1F8E9', // Light green
+					200: '#C5E1A5', // Sage green
+					300: '#7CB342', // Fresh green
+					400: '#4CAF50', // Vibrant green
+					500: '#388E3C', // Forest green
+					600: '#1B5E20', // Dark green
+				},
+				sunshine: {
+					100: '#FFFDE7', // Light yellow
+					200: '#FFF59D', // Pale yellow
+					300: '#FFD700', // Golden yellow
+					400: '#FDD835', // Bright yellow
+					500: '#F9A825', // Deep yellow
+					600: '#F57F17', // Dark yellow
+				},
 				sporty: {
-					purple: '#8B5CF6', // Vibrant purple
-					pink: '#D946EF',   // Magenta pink
-					orange: '#F97316', // Bright orange
 					blue: '#0EA5E9',   // Ocean blue
+					green: '#4CAF50',   // Vibrant green
+					yellow: '#FFD700',   // Golden yellow
+					teal: '#00BCD4',    // Bright teal
 				},
 			},
 			borderRadius: {
