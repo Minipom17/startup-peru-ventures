@@ -9,15 +9,15 @@ export function HeroSection() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="flex flex-col gap-6 animate-fade-in">
-            <h1 className="text-4xl md:text-6xl font-bold text-forest-600">
-              Elevate Your <span className="text-sporty-teal">Running Experience</span>
+            <h1 className="text-4xl md:text-6xl font-bold text-ocean-600">
+              Elevate Your <span className="text-sporty-green">Running Experience</span>
             </h1>
-            <p className="text-lg md:text-xl text-forest-500/80 max-w-lg">
-              Performance gear, community connections, and AI-powered running insights. 
-              From premium equipment to personalized trail recommendations.
+            <p className="text-lg md:text-xl text-ocean-500/80 max-w-lg">
+              Performance gear, AI-powered community connections, and personalized running insights. 
+              From premium equipment to intelligent trail recommendations.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 mt-4">
-              <Button asChild className="bg-sporty-teal hover:bg-sporty-teal/90 text-white px-8 py-6 rounded-md text-lg">
+              <Button asChild className="bg-sporty-blue hover:bg-sporty-blue/90 text-white px-8 py-6 rounded-md text-lg">
                 <Link to="/shop">Explore Gear</Link>
               </Button>
               <Button asChild variant="outline" className="border-sporty-green text-sporty-green hover:bg-sporty-green/10">
@@ -26,17 +26,17 @@ export function HeroSection() {
             </div>
             <div className="flex items-center gap-6 mt-6">
               <div className="flex flex-col">
-                <span className="text-sm uppercase text-forest-500/60">Premium</span>
+                <span className="text-sm uppercase text-ocean-500/60">Premium</span>
                 <span className="font-medium">Equipment</span>
               </div>
-              <div className="h-10 w-px bg-forest-500/20"></div>
+              <div className="h-10 w-px bg-ocean-500/20"></div>
               <div className="flex flex-col">
-                <span className="text-sm uppercase text-forest-500/60">Weekly</span>
+                <span className="text-sm uppercase text-ocean-500/60">Weekly</span>
                 <span className="font-medium">Group Runs</span>
               </div>
-              <div className="h-10 w-px bg-forest-500/20"></div>
+              <div className="h-10 w-px bg-ocean-500/20"></div>
               <div className="flex flex-col">
-                <span className="text-sm uppercase text-forest-500/60">AI Trail</span>
+                <span className="text-sm uppercase text-ocean-500/60">AI Trail</span>
                 <span className="font-medium">Finder</span>
               </div>
             </div>
@@ -55,8 +55,8 @@ export function HeroSection() {
       
       {/* Split showcase banners */}
       <div className="absolute bottom-0 left-0 right-0 grid grid-cols-1 md:grid-cols-2 bg-white/80 backdrop-blur">
-        <div className="p-4 border-r border-forest-500/10 flex items-center justify-center">
-          <Link to="/shop" className="flex items-center gap-3 text-sporty-teal hover:text-sporty-teal/80 transition-colors">
+        <div className="p-4 border-r border-ocean-500/10 flex items-center justify-center">
+          <Link to="/shop" className="flex items-center gap-3 text-sporty-blue hover:text-sporty-blue/80 transition-colors">
             <span className="text-xl font-bold">Browse Performance Gear</span>
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
