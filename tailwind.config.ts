@@ -83,6 +83,19 @@ export default {
           teal: '#20B2AA',     // Light Sea Green
           accent: '#1EAEDB',   // Bright Turquoise
         },
+        charcoal: {
+          DEFAULT: '#403E43',  // Dark gray, close to the previous color
+          50: '#F5F5F5',
+          100: '#E0E0E0',
+          200: '#A0A0A0',
+          300: '#707070',
+          400: '#505050',
+          500: '#403E43',
+          600: '#303030',
+          700: '#252525',
+          800: '#1A1A1A',
+          900: '#0F0F0F',
+        },
       },
       borderRadius: {
         lg: 'var(--radius)',
