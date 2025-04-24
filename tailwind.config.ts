@@ -77,7 +77,7 @@ export default {
 					600: '#F57F17', // Dark yellow
 				},
 				sporty: {
-					blue: '#0EA5E9',   // Ocean blue
+					blue: '#1EAEDB',   // Bright blue
 					green: '#4CAF50',   // Vibrant green
 					yellow: '#FFD700',   // Golden yellow
 					teal: '#00BCD4',    // Bright teal
