@@ -19,7 +19,7 @@
     --secondary: 142 75% 45%; /* Updated to vibrant green */
     --secondary-foreground: 195 100% 98%;
 
-    --accent: 50 100% 50%; /* Golden yellow */
+    --accent: 50 100% 50%; /* Explicitly set to a golden yellow */
     --accent-foreground: 200 50% 20%;
 
     --muted: 195 20% 90%;
