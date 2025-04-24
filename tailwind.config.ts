@@ -53,19 +53,26 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
-				// Brand colors
-				terracotta: '#C34A36',
-				teal: '#267D80',
-				gold: '#F5B82E',
-				cream: '#F5EFE0',
-				charcoal: '#2D2A26',
+				// Updated brand colors with more vibrant options
+				terracotta: '#FF5733', // Brighter orange-red
+				teal: '#00BCD4', // Brighter teal blue
+				gold: '#FFD700', // Brighter gold
+				cream: '#FFFAF0', // Keeping cream light
+				charcoal: '#2D2A26', // Keeping charcoal
 				alpaca: {
-					100: '#F5EFE0', // Light cream
+					100: '#FFFAF0', // Light cream
 					200: '#E6D7BF', // Warm sand
-					300: '#C34A36', // Terracotta
-					400: '#267D80', // Teal
-					500: '#F5B82E', // Gold accent
+					300: '#FF5733', // Vibrant terracotta
+					400: '#00BCD4', // Vibrant teal
+					500: '#FFD700', // Vibrant gold
 					600: '#2D2A26', // Charcoal
+				},
+				// New sporty color additions
+				sporty: {
+					purple: '#8B5CF6', // Vibrant purple
+					pink: '#D946EF',   // Magenta pink
+					orange: '#F97316', // Bright orange
+					blue: '#0EA5E9',   // Ocean blue
 				},
 			},
 			borderRadius: {

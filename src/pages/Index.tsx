@@ -7,6 +7,7 @@ import { TrailFinderTeaser } from "@/components/trail-finder-teaser";
 import { Testimonials } from "@/components/testimonials";
 import { Footer } from "@/components/footer";
 import { ChatBot } from "@/components/chat-bot";
+import { CommunitySection } from "@/components/community-section";
 
 const Index = () => {
   return (
@@ -14,9 +15,37 @@ const Index = () => {
       <NavMenu />
       <main>
         <HeroSection />
-        <FeaturedProducts />
-        <MaterialsShowcase />
-        <TrailFinderTeaser />
+        
+        {/* Product Section */}
+        <div className="bg-cream py-12">
+          <div className="container mx-auto px-4">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-bold mb-2 inline-block relative">
+                Premium Running Gear
+                <span className="absolute bottom-[-8px] left-0 right-0 h-1 w-24 bg-sporty-orange mx-auto"></span>
+              </h2>
+              <p className="text-lg mt-6">Crafted in Peru with the finest materials for optimal performance</p>
+            </div>
+          </div>
+          <FeaturedProducts />
+          <MaterialsShowcase />
+        </div>
+        
+        {/* Community & AI Section */}
+        <div className="bg-white py-12">
+          <div className="container mx-auto px-4">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-bold mb-2 inline-block relative">
+                Community & Resources
+                <span className="absolute bottom-[-8px] left-0 right-0 h-1 w-24 bg-sporty-blue mx-auto"></span>
+              </h2>
+              <p className="text-lg mt-6">Connect with fellow runners and access AI-powered tools</p>
+            </div>
+          </div>
+          <CommunitySection />
+          <TrailFinderTeaser />
+        </div>
+        
         <Testimonials />
       </main>
       <Footer />

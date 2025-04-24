@@ -14,13 +14,13 @@
     --popover: 0 0% 100%;
     --popover-foreground: 22 10% 16%;
 
-    --primary: 10 57% 49%;
+    --primary: 15 100% 60%;  /* Updated to more vibrant terracotta */
     --primary-foreground: 40 26% 92%;
 
-    --secondary: 180 53% 33%;
+    --secondary: 187 100% 42%; /* Updated to more vibrant teal */
     --secondary-foreground: 40 26% 92%;
 
-    --accent: 40 89% 57%;
+    --accent: 50 100% 50%; /* Updated to more vibrant gold */
     --accent-foreground: 22 10% 16%;
 
     --muted: 40 12% 90%;
@@ -31,7 +31,7 @@
 
     --border: 22 10% 85%;
     --input: 22 10% 85%;
-    --ring: 10 57% 49%;
+    --ring: 15 100% 60%;
 
     --radius: 0.5rem;
   }
@@ -46,13 +46,13 @@
     --popover: 22 10% 18%;
     --popover-foreground: 40 26% 92%;
  
-    --primary: 10 57% 49%;
+    --primary: 15 100% 60%;
     --primary-foreground: 40 26% 92%;
  
-    --secondary: 180 53% 33%;
+    --secondary: 187 100% 42%;
     --secondary-foreground: 40 26% 92%;
  
-    --accent: 40 89% 57%;
+    --accent: 50 100% 50%;
     --accent-foreground: 22 10% 16%;
  
     --muted: 22 10% 25%;
@@ -63,7 +63,7 @@
  
     --border: 22 10% 30%;
     --input: 22 10% 30%;
-    --ring: 10 57% 49%;
+    --ring: 15 100% 60%;
   }
 }
 
@@ -79,8 +79,9 @@
 
 @layer components {
   .hero-pattern {
-    background-color: #f5efe0;
-    background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23c34a36' fill-opacity='0.1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    background-color: #FFFAF0;
+    /* Updated background pattern to be more dynamic and sporty */
+    background-image: url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23FF5733' fill-opacity='0.15'%3E%3Cpath d='M0 0h40v40H0V0zm40 40h40v40H40V40zm0-40h2l-2 2V0zm0 4l4-4h2l-6 6V4zm0 4l8-8h2L40 10V8zm0 4L52 0h2L40 14v-2zm0 4L56 0h2L40 18v-2zm0 4L60 0h2L40 22v-2zm0 4L64 0h2L40 26v-2zm0 4L68 0h2L40 30v-2zm0 4L72 0h2L40 34v-2zm0 4L76 0h2L40 38v-2zm0 4L80 0v2L42 40h-2zm4 0L80 4v2L46 40h-2zm4 0L80 8v2L50 40h-2zm4 0l28-28v2L54 40h-2zm4 0l24-24v2L58 40h-2zm4 0l20-20v2L62 40h-2zm4 0l16-16v2L66 40h-2zm4 0l12-12v2L70 40h-2zm4 0l8-8v2L74 40h-2zm4 0l4-4v2L78 40h-2zM2 2L0 4V2h2zm4 0L2 4v2L0 8V6l4-4h2zm4 0L6 4v2L0 12v-2l8-8h2zm4 0l-4 4v2L0 16v-2L12 2h2zm4 0l-8 8v2L0 20v-2L16 2h2zm4 0l-12 12v2L0 24v-2L20 2h2zm4 0l-16 16v2L0 28v-2L24 2h2zm4 0l-20 20v2L0 32v-2L28 2h2zm4 0l-24 24v2L0 36v-2L32 2h2zm4 0l-28 28v2L0 40v-2L36 2h2zm4 0l-32 32v-2l32-32h2zm4 0l-36 36h-2l38-38v2zm4 0l-32 32h-2l34-34v2z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
   }
 
   .btn-primary {
@@ -102,5 +103,20 @@
   .section-title::after {
     content: "";
     @apply absolute bottom-[-8px] left-0 h-1 w-20 bg-gold;
+  }
+
+  /* New split layout for showcase sections */
+  .split-showcase {
+    @apply grid grid-cols-1 md:grid-cols-2 gap-8;
+  }
+
+  /* New community feature styles */
+  .community-card {
+    @apply bg-white rounded-lg shadow-md p-6 transition-transform hover:scale-105;
+  }
+
+  /* Calendar event styles */
+  .calendar-event {
+    @apply p-3 rounded-md mb-2 border-l-4 border-teal;
   }
 }
